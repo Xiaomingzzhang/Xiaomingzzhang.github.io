@@ -2,7 +2,7 @@ site_name: My Docs
 theme:
   name: material
   language: zh
-remote_branch: website
+
 plugins:
   - search
   - blog
