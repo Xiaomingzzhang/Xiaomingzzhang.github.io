@@ -49,6 +49,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -415,6 +417,8 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
@@ -432,7 +436,7 @@
   <div class="md-content" data-md-component="content">
     <div class="md-content__inner">
       <header class="md-typeset">
-        <h1 id="blog">Blog</h1>
+        <h1 id="blog">Blog<a class="headerlink" href="#blog" title="点击定位到锚点">#</a></h1>
       </header>
       
         <article class="md-post md-post--excerpt">
@@ -458,13 +462,9 @@
   <div class="md-post__content md-typeset">
     <h2 id="happy-new-years-eve"><a class="toclink" href="2024/12/31/happy-new-years-eve/">Happy new years eve!</a></h2>
 <p>We hope you are all having fun and wish you all the best for the new year!</p>
-
-    
-      <nav class="md-post__action">
-        <a href="2024/12/31/happy-new-years-eve/">
-          继续阅读
-        </a>
-      </nav>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>是吗时吗</p>
     
   </div>
 </article>
@@ -492,13 +492,34 @@
   <div class="md-post__content md-typeset">
     <h2 id="happy-new-years-eve"><a class="toclink" href="2023/12/31/happy-new-years-eve/">Happy new years eve!</a></h2>
 <p>We hope you are all having fun and wish you all the best for the new year!</p>
-
-    
-      <nav class="md-post__action">
-        <a href="2023/12/31/happy-new-years-eve/">
-          继续阅读
-        </a>
-      </nav>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.</p>
+<h2 id="测试公式"><a class="toclink" href="2023/12/31/happy-new-years-eve/#测试公式">测试公式</a></h2>
+<div class="arithmatex">\[\frac{1}{2}mv^2+J\dot{\phi}^2-mgG(\phi)\]</div>
+<div class="arithmatex">\[
+\dot{N}+[\Omega,N]=0.
+\]</div>
+<div class="arithmatex">\[\begin{equation}
+\dot{N}+[\Omega,N]=0.
+\tag{1}\label{sample}
+\end{equation}\]</div>
+<p>公式 eqref{sample}</p>
+<p>In equation eqref{eq:sample}, we find the value of an
+interesting integral:</p>
+<div class="arithmatex">\[\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}\]</div>
+<div class="language-julia highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">=</span><span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="o">+</span><span class="mi">12</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><a href="#__codelineno-0-2"><span class="linenos" data-linenos="2 "></span></a><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">eachindex</span><span class="p">(</span><span class="mi">0</span><span class="o">:</span><span class="mf">0.1</span><span class="o">:</span><span class="mi">2</span><span class="nb">pi</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><a href="#__codelineno-0-3"><span class="linenos" data-linenos="3 "></span></a><span class="w">    </span><span class="n">f</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><a href="#__codelineno-0-4"><span class="linenos" data-linenos="4 "></span></a><span class="k">end</span>
+</span></code></pre></div>
+<p>Euler 盘是一个很有意思的教学玩具, 它大概在上世纪九十年代被发明 (命名为 Euler 盘是为了纪念 Euler, 有条件的读者可以查看维基百科), 随后变成了一个较为流行的教学工具. Euler 盘是一个较重的, 扁的圆柱形的铁盘, 另外还有一个光滑的镜面, 使 Euler 盘可以在镜面上旋转. 不同于一个硬币只能在桌子上旋转几秒钟, 一个精心制作的 Euler 盘甚至能旋转 8 分钟, 可参看这个<a href="https://www.bilibili.com/video/BV14P4y177xW/?spm_id_from=333.337.search-card.all.click">视频</a>. </p>
+<p>下面我们将用理论力学的知识对 Euler 盘进行动力学建模, 并使用 Mathematica 求解微分方程, 可视化其运动.</p>
+<p>由于 Euler 盘与镜面都是比较光滑的, 在建模时很自然地假设接触点的速度是水平的, 即接触点可以滑动. 然而在文献 cite{petrie2002} 中的实验发现, 接触点至少在前期重心位置较高的时候没有滑动, 而是作纯滚动. 因此我们也将采用纯滚动这个假设. 如果读者想参考纯滑动的模型, 可参见我的手写稿 <a href="/files/Euler%20Disk.pdf">Euler Disk</a>. 考虑这样一个纯滚动的特例的难度, 与考虑任意刚体在水平面的纯滚动问题的难度没有太大区别, 因此我们将先考虑后者, 而后再特例化, 回到我们的模型.</p>
+<p>section{运动微分方程}
+我们假设读者已经熟悉了刚体动力学的知识, 包括惯性张量, 角速度, 角动量, Euler 角等概念以及它们之间的联系. 这些知识可以在国内的任一本高等动力学教材中找到, 如果读者想看较为数学化的阐述, 可参考 Arnold 的经典教材: 经典力学的数学方法, 也可参看我的读书笔记: <a href="/files/rigid-body-dynamics1.pdf">刚体动力学</a>.</p>
     
   </div>
 </article>
@@ -555,6 +576,10 @@
     
     
       <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
