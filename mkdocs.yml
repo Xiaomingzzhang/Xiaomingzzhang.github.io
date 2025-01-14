@@ -1,4 +1,16 @@
-site_name: My Docs
+site_name: MyDocs # 站点名称
+site_url: https://Xiaomingzzhang.github.io/website/ # 站点链接
+repo_url: https://github.com/Xiaomingzzhang/website/ # 仓库地址
+repo_name: Xiaomingzzhang/website # 仓库名称
+edit_uri: edit/master/docs/ # 编辑地址（页面会出现编辑按钮）
+site_description: Everything about the fucking code. # 站点描述
+site_author: Xiaoming # 站点作者
+copyright: Copyright &copy; 2024 小康2022 # 版权信息（会出现在左下角）
+remote_branch: gh-pages # GitHub Pages 分支名称（默认值）
+remote_name: origin # 远程分支的名称（默认值）
+docs_dir: docs # 文档目录（默认值）
+site_dir: site # 网站目录（默认值）
+
 theme:
   name: material
   language: zh
