@@ -1,0 +1,10 @@
+site_name: My Docs
+theme:
+  name: material
+  language: zh
+
+plugins:
+  - search
+  - blog
+  
+
