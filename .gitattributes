@@ -1,2 +1,5 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# .gitignore 文件自身没必要上传
+.gitignore
+ 
+# site 文件夹不要上传
+site/
